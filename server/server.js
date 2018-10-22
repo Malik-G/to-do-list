@@ -31,7 +31,7 @@ app.listen( port, () => {
  ////////////
  
  app.get('/todo', (req, res) => {
-   sqlText = `SELECT * FROM list ORDER BY id ASC;`;
+   sqlText = `SELECT * FROM list ORDER BY completed, id ASC;`;
    pool.query(sqlText)
    .then((result) => {
       res.send(result.rows);
