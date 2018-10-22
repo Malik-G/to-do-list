@@ -5,24 +5,29 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <script src="vendors/jquery-3.3.1.min.js"></script>
+   <script src="vendors/bootstrap.min.js"></script>
    <script src="scripts/client.js"></script>
+   <link rel="stylesheet" href="vendors/bootstrap.min.css">
    <link rel="stylesheet" href="views/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400|PT+Sans|Raleway|Slabo+27px" rel="stylesheet">
    <title>To Do List</title>
 </head>
-<body>
+<body class="container ">
    <h1>Full Stack To-Do List</h1>
-   <section>
-      <form >
-         <label for="taskInput">New Task: </label>
-         <input type="text" name="taskInput" id="taskInput">
-         <button type="submit" id="addBtn">Add</button>
+   <section class="container">
+      <form class="form" >
+         <div class="form-group">
+            <legend for="taskInput">NEW TASK: </legend>
+            <textarea type="text" name="taskInput" id="taskInput"></textarea><br>
+            <button class="col col-2" type="submit" id="addBtn">Add</button>
+         </div>
       </form>
    </section> 
-   <section>
-      <table>
+   <section class="container">
+      <table class="table table-hover">
          <thead>
-            <th>Task</th>
-            <th>Completed</th>
+            <th>TASK</th>
+            <th>COMPLETED</th>
             <th></th>
          </thead>
          <tbody id="tableBody"></tbody>
