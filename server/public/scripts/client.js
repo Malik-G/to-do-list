@@ -77,12 +77,23 @@ function deleteTask(){
 function appendTasks(arrOfObjs){
    $('#tableBody').empty();
    for(let obj of arrOfObjs){
-      let newRow = $(`<tr>
-         <td>${obj.task}</td>
-         <td>${obj.completed}</td>
-         <td><button class="statusBtn btn-success">Check</button>
-         <button class="deleteBtn btn-danger">Delete</button></td>
-         </tr>`);
+      let newRow = '';
+      if(obj.completed === 'Yes'){
+         newRow = $(`<tr>
+            <td class="checkedOff">${obj.task}</td>
+            <td>${obj.completed}</td>
+            <td><button class="statusBtn btn-success">Uncheck</button>
+            <button class="deleteBtn btn-danger">Delete</button></td>
+            </tr>`);
+      }
+      else {
+         newRow = $(`<tr>
+            <td>${obj.task}</td>
+            <td>${obj.completed}</td>
+            <td><button class="statusBtn btn-warning">Check</button>
+            <button class="deleteBtn btn-danger">Delete</button></td>
+            </tr>`);
+      }
       $('#tableBody').append(newRow);
       // BELOW: important lines for each tr to have referrable identifiers
       newRow.data('task_id', obj.id);

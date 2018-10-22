@@ -1,10 +1,11 @@
 body {
    font-family: 'Raleway', sans-serif;
-}
+   background: rgb(222,184,135)
+;}
 
 h1 {
    text-align: center;
-   margin-top: 10px;
+   margin-top: 20px;
    margin-bottom: 50px;
    font-family: 'Raleway', sans-serif;
 }
@@ -12,6 +13,14 @@ h1 {
 td{
    font-family: 'Amatic SC';
    font-size: 30px;
+}
+
+button {
+   background: rgb(35,40,40);
+   color: white;
+   font-family: 'Raleway', sans-serif;
+   text-align: center;
+   margin
 }
 
 table button {
@@ -23,10 +32,16 @@ table button {
 }
 
 textarea {
-   margin-bottom: -10px;
-}
+   margin-bottom: 10px;
+   background: rgb(35,40,40);
+   height: 200px;
+   width: 500px;
+   color: white;
+   font-family: 'Amatic SC';
+   font-size: 30px;
+;}
 
-.check {
+.checkedOff {
    text-decoration: line-through;
 }
 
