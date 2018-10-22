@@ -80,8 +80,8 @@ function appendTasks(arrOfObjs){
       let newRow = $(`<tr>
          <td>${obj.task}</td>
          <td>${obj.completed}</td>
-         <td><button class="statusBtn">Change Status</button>
-         <button class="deleteBtn">Delete</button></td>
+         <td><button class="statusBtn btn-success">Check</button>
+         <button class="deleteBtn btn-danger">Delete</button></td>
          </tr>`);
       $('#tableBody').append(newRow);
       // BELOW: important lines for each tr to have referrable identifiers

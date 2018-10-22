@@ -1,3 +1,36 @@
+body {
+   font-family: 'Raleway', sans-serif;
+}
+
 h1 {
    text-align: center;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   font-family: 'Raleway', sans-serif;
 }
+
+td{
+   font-family: 'Amatic SC';
+   font-size: 30px;
+}
+
+table button {
+   font-family: 'Raleway', sans-serif;
+   font-size:12px;
+   text-transform: uppercase;
+   height: 41px;
+   width: 100px;
+}
+
+textarea {
+   margin-bottom: -10px;
+}
+
+.check {
+   text-decoration: line-through;
+}
+
+/* font-family: 'Slabo 27px', serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Amatic SC', cursive; */
