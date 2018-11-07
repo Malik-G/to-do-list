@@ -20,7 +20,6 @@ button {
    color: white;
    font-family: 'Raleway', sans-serif;
    text-align: center;
-   margin
 }
 
 table button {
@@ -38,7 +37,7 @@ textarea {
    width: 500px;
    color: white;
    font-family: 'Amatic SC';
-   font-size: 30px;
+   font-size: 35px;
 ;}
 
 .checkedOff {
