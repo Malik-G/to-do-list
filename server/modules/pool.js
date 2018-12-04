@@ -23,7 +23,7 @@ if (process.env.DATABASE_URL) {
   config = {
     host: 'localhost', // Server hosting the postgres database
     port: 5432, // env var: PGPORT
-    database: 'weekend-to-do-app', // You will need a database named `pizza_parlor` in order for this to work locally
+    database: process.env.DATABASE_NAME || 'weekend-to-do-app', // You will need a database named `pizza_parlor` in order for this to work locally
     max: 10, // max number of clients in the pool
     idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
   };
