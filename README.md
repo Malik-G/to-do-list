@@ -30,8 +30,11 @@ CREATE TABLE list (
 4. Reference the test data inserts located in the database.sql file 
 
 ## Future Versions
-- `Edit Button` 
+- Edit Button
 
-- `User authentication` 
+- User authentication
 
-- `Make more mobile friendly`
+- Make more mobile friendly
+
+- Voice recognition to add tasks
+
