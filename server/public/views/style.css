@@ -1,3 +1,7 @@
+.centerText {
+   text-align: center;
+}
+
 body {
    font-family: 'Raleway', sans-serif;
    background: rgb(222,184,135)
@@ -20,6 +24,16 @@ button {
    color: white;
    font-family: 'Raleway', sans-serif;
    text-align: center;
+   margin: auto;
+   display: block;
+}
+
+section {
+   margin-bottom: 40px;
+}
+
+.table {
+   width: 1000px;
 }
 
 table button {
@@ -31,17 +45,24 @@ table button {
 }
 
 textarea {
-   margin-bottom: 10px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
    background: rgb(35,40,40);
    height: 200px;
    width: 500px;
    color: white;
    font-family: 'Amatic SC';
    font-size: 35px;
-;}
+   display: block;
+}
 
 .checkedOff {
    text-decoration: line-through;
+}
+
+.marginAuto {
+   margin: auto;
 }
 
 /* font-family: 'Slabo 27px', serif; */

@@ -61,17 +61,31 @@ function changeStatus(){
 }
 
 function deleteTask(){
-   let rowClicked = $(this).closest('tr');
-   let rowId = rowClicked.data('task_id');
-   $.ajax({
-      method: 'DELETE',
-      url: `/todo/delete/${rowId}`
-   }).then(function(response){
-      getAllTasks();
-      console.log('Deleted from list');
-   }).catch(function(error){
-      console.log('DELETE request unsuccessful:', error);
+   swal({
+      title: "DELETE Task?",
+      text: "Think twice...",
+      icon: "warning",
+      buttons: true
    })
+   .then((willDelete) => {
+      if(willDelete) {
+         swal("Successfully Deleted!", {icon: "success"});
+         let rowClicked = $(this).closest('tr');
+         let rowId = rowClicked.data('task_id');
+         $.ajax({
+            method: 'DELETE',
+            url: `/todo/delete/${rowId}`
+         }).then(function(response){
+            getAllTasks();
+            console.log('Deleted from list');
+         }).catch(function(error){
+            console.log('DELETE request unsuccessful:', error);
+         })
+      }
+      else {
+         swal("No Deletion...");
+      }
+   }); 
 }
 
 function appendTasks(arrOfObjs){
