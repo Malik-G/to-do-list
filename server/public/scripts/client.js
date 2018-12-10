@@ -62,7 +62,7 @@ function changeStatus(){
 
 function deleteTask(){
    swal({
-      title: "DELETE Task?",
+      title: "Delete Task?",
       text: "Think twice...",
       icon: "warning",
       buttons: true
